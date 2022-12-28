@@ -1,0 +1,18 @@
+@import './transition.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  .title {
+    @apply text-3xl text-white font-black;
+  }
+  .basetxt {
+    @apply text-xl text-white;
+  }
+  .hyperbg {
+    @apply bg-[url('~/assets/img/hyperspace.jpeg')] bg-no-repeat bg-cover bg-center;
+  }
+  .yellowbutton {
+   @apply bg-swyellow px-4 py-1 border-transparent border-2 text-black rounded-full hover:border-swyellow hover:bg-black hover:bg-opacity-50 hover:border-2 hover:text-white
+  }
+}

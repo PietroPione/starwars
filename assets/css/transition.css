@@ -1,0 +1,28 @@
+.popup-enter-active {
+  @apply transition-opacity;
+}
+.popup-leave-active {
+  @apply transition-opacity delay-1000;
+}
+.popup-enter-active, .popup-leave-active {
+  & .innerpopup {
+    @apply transition-all;
+   }
+}
+.popup-enter {
+  @apply opacity-0;
+}
+.popup-leave-to {
+  @apply opacity-0;
+  & .innerpopup {
+    @apply scale-150 opacity-0;
+  }
+}
+.popupinner-enter-active,
+.popupinner-leave-active {
+  @apply transition-all;
+}
+.popupinner-enter {
+  @apply scale-0;
+}
+
