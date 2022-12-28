@@ -22,8 +22,8 @@
             </li>
           </ul>
           <ul>
-            <button class="yellowbutton" @click="getGrid()">Griglia</button>
-            <button class="yellowbutton" @click="getList()">Lista</button>
+            <button class="yellowbutton" @click="getGrid()" v-if="this.navstyle == 'list'">Griglia</button>
+            <button class="yellowbutton" @click="getList()" v-if="this.navstyle == 'grid' || this.navstyle == null">Lista</button>
           </ul>
         </div>
       </div>
