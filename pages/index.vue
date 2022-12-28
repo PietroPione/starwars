@@ -5,8 +5,12 @@
     </transition>
     <div>
       <div class="border-2 border-swyellow px-10 py-4 rounded-3xl">
-        <div class="flex justify-between items-center">
-          <ul class="flex gap-x-2 items-center">
+        <div
+          class="flex justify-between items-center flex-col md:flex-row md:space-y-0"
+        >
+          <ul
+            class="flex flex-col md:flex-row space-y-4 pb-4 md:pb-0 md:space-y-0 gap-x-2 items-center"
+          >
             <li class="text-white pr-2">Filtra per</li>
             <li
               v-for="item in [
@@ -21,15 +25,27 @@
               </button>
             </li>
           </ul>
-          <ul>
-            <button class="yellowbutton" @click="getGrid()" v-if="this.navstyle == 'list'">Griglia</button>
-            <button class="yellowbutton" @click="getList()" v-if="this.navstyle == 'grid' || this.navstyle == null">Lista</button>
+          <ul class="hidden md:block">
+            <button
+              class="yellowbutton"
+              @click="getGrid()"
+              v-if="this.navstyle == 'list'"
+            >
+              Griglia
+            </button>
+            <button
+              class="yellowbutton"
+              @click="getList()"
+              v-if="this.navstyle == 'grid' || this.navstyle == null"
+            >
+              Lista
+            </button>
           </ul>
         </div>
       </div>
       <div class="basetxt mt-6">
         <div v-if="this.navstyle == 'grid' || this.navstyle == null">
-          <div class="grid grid-cols-3 gap-10" v-if="result">
+          <div class="md:grid md:grid-cols-3 gap-10" v-if="result">
             <div
               class="flex"
               v-for="(item, index) in result.results.slice(0, 6)"
@@ -46,7 +62,7 @@
           </div>
         </div>
         <div v-if="this.navstyle == 'list'">
-          <div class="space-y-4 " v-if="result">
+          <div class="space-y-4" v-if="result">
             <div
               class="flex"
               v-for="(item, index) in result.results.slice(0, 6)"
