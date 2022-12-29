@@ -1,6 +1,7 @@
 <template>
-  <article class="border-2 bg-black bg-opacity-50 border-swyellow p-6 rounded-3xl space-y-4  transition-all transition-500 group group-hover:scale-110 w-full">
-    <div class="flex justify-between">
+  <article class="group w-full">
+    <div class="border-2 bg-black bg-opacity-50 border-swyellow p-6 rounded-3xl space-y-4  transition-all transition-500 group group-hover:scale-110 w-full" >
+      <div class="flex justify-between">
       <div class="pt-8 md:pt-0">
 <p class="title text-swyellow"><span v-html="item.name"></span></p>
     <p class="basetxt">Clima: <span v-html="item.climate"></span></p>
@@ -25,7 +26,9 @@
 
    
    
-    <slot></slot>
+     <slot class="group group-hover:scale-150"></slot>
+    </div>
+    
   </article>
 </template>
 <script>
