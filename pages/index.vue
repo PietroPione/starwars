@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen px-4 md:px-20">
+  <div class="px-4 md:px-20">
     <transition name="popup" :duration="1000">
       <info-popup v-if="$store.state.popup.url"></info-popup>
     </transition>
@@ -62,7 +62,7 @@
           </div>
         </div>
         <div v-if="this.navstyle == 'list'">
-          <div class="space-y-4" v-if="result">
+          <div class="space-y-4 md:space-y-0" v-if="result">
             <div
               class="flex"
               v-for="(item, index) in result.results.slice(0, 6)"
