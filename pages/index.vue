@@ -45,7 +45,7 @@
       </div>
       <div class="basetxt mt-6">
         <div v-if="this.navstyle == 'grid' || this.navstyle == null">
-          <div class="md:grid md:grid-cols-3 gap-10" v-if="result">
+          <div class="md:grid md:grid-cols-3 gap-10 space-y-4 md:space-y-0 " v-if="result">
             <div
               class="flex"
               v-for="(item, index) in result.results.slice(0, 6)"
