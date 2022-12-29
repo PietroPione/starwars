@@ -10,7 +10,7 @@
     <transition name="popupinner">
     <div
     v-if="!$fetchState.pending"
-      class="bg-black basetxt border-swyellow border-2 py-8 w-1/2 px-8 flex justify-center items-center rounded-3xl space-y-6 "
+      class="bg-black basetxt border-swyellow border-2 py-8 w-10/12 h-10/12 md:w-1/2 px-8 flex justify-center items-center rounded-3xl space-y-6 "
     >
       <component :is="'popup-detail'" :item="item"> </component>
     </div>
