@@ -1,7 +1,7 @@
 <template>
-  <article class="border-2 bg-black bg-opacity-50 border-swyellow p-6 rounded-3xl space-y-10 w-full">
+  <article class="border-2 bg-black bg-opacity-50 border-swyellow p-6 rounded-3xl space-y-4  transition-all transition-500 group group-hover:scale-110 w-full">
     <div class="flex justify-between">
-      <div>
+      <div class="pt-8 md:pt-0">
 <p class="title text-swyellow"><span v-html="item.name"></span></p>
     <p class="basetxt">Clima: <span v-html="item.climate"></span></p>
     <p class="basetxt">

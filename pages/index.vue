@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen px-20">
+  <div class="min-h-screen px-4 md:px-20">
     <transition name="popup" :duration="1000">
       <info-popup v-if="$store.state.popup.url"></info-popup>
     </transition>

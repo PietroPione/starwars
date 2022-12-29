@@ -1,8 +1,8 @@
 <template>
   <article class="group w-full">
-    <div class="border-2 bg-black bg-opacity-50 border-swyellow p-6 rounded-3xl space-y-10  transition-all transition-500 group group-hover:scale-110">
+    <div class="border-2 bg-black bg-opacity-50 border-swyellow p-6 rounded-3xl space-y-4  transition-all transition-500 group group-hover:scale-110">
     <div class="flex justify-between">
-      <div>
+      <div class="pt-8 md:pt-0">
 <p class="title text-swyellow"><span v-html="item.name"></span></p>
     <p class="basetxt">Occhi: <span v-html="item.eye_color"></span></p>
     </div>
