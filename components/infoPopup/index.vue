@@ -4,7 +4,7 @@
     @click.self="closePopup()"
   >
     <div class="absolute z-50 right-10 top-10 pointer-events-none flex flex-col">
-      <img src="~/assets/img/close.png" alt="close button" class="h-20 bg-black rounded-full">
+      <img src="~/assets/img/close.png" alt="close button" class="h-20 bg-black rounded-full pointer-events-auto" @click.self="closePopup()">
     </div>
     <!-- Perchè se al padre metto il click ma al figlio pointer event none non funziona? -->
     <transition name="popupinner">
