@@ -1,6 +1,6 @@
 <template>
   <section
-    class="fixed w-full h-screen z-40 left-0 inset-y-0 bg-opacity-25  flex items-center justify-center"
+    class="fixed mw-full xwh-screen z-40 left-0 inset-y-0 bg-opacity-25 flex items-center justify-center overflow-hidden"
     @click.self="closePopup()"
   >
     <div class="absolute z-50 right-10 top-10 pointer-events-none flex flex-col">
